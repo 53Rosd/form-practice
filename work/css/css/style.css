@@ -1,1 +1,206 @@
 @charset "UTF-8";
+
+body{
+  background: #cff1ff;
+  color:#464646;
+}
+a{
+  text-decoration: none;
+  color:#0170bf;
+}
+label{
+  font-size:14px;
+}
+select{
+  appearance: none;
+}
+input:focus, select:focus{
+  outline:solid 2px rgba(107, 195, 233, 0.3)
+}
+.wrapper{
+  margin: 0 auto;
+  width: 600px;
+}
+.site-title{
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  margin: 60px 0;
+}
+.form-contena{
+  box-sizing: border-box;
+  background: #ecfaff;
+  padding:50px;
+  margin: 0 auto;
+}
+.form-area-title{
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-bottom:45px;
+}
+.section-area{
+  margin-bottom:50px;
+}
+.section-title{
+  font-size:18px;
+  color: #000000;
+  margin:30px 0;
+}
+.input-box{
+  margin-bottom:25px;
+}
+.red-mark{
+  color:#e40000;
+  font-size: 4px;
+}
+.input-area, .select-area{
+  height:35px;
+  box-sizing: border-box;
+  width:100%;
+  margin-top:5px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+.select-area{
+  padding:7px 5px;
+  margin-top: 10px;
+  color:#464646;
+}
+.flex-area{
+  display: flex;
+}
+.gender-area{
+  margin:25px 0;
+}
+.gender-area-content{
+  margin-top: 5px;
+  padding-left: 5px;
+}
+/* ------------------------------ */
+.submit-area p{
+  font-size:9px;
+  margin:20px 0;
+}
+.subscription-area{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.subscription-area input:focus,
+.gender-area input:focus{
+  outline: none;
+}
+/*------ ドロップダウンリストの矢印 ------*/
+.drop-mark{
+  width: 100%;
+  position: relative;
+}
+.drop-mark::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 10px;
+  top: 50%;
+  display: inline-block;
+  border-bottom: 2px solid #c3c3c3;
+  border-right: 2px solid #c3c3c3;
+  transform: rotate(45deg);
+}
+/* ------------------------------ */
+/*------ 性別のラジオボタン ------*/
+input[type="radio"]{
+  padding-left:25px;
+  vertical-align: center;
+  position:relative;
+}
+input[type="radio"]::before,
+input[type="radio"]::after{
+  content:"";
+  display: block;
+  position: absolute;
+}
+input[type="radio"]::before{
+  background-color: #fff;
+  border-radius: 50%;
+  border:1px solid #d9d9d9;
+  width: 16px;
+  height: 16px;
+  top:50%;
+  left:0px;
+  transform:translateY(-50%);
+}
+input[type="radio"]::after{
+  background-color: #017cbf;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  opacity: 0;
+}
+input[type="radio"]:checked::after{
+  opacity: 1;
+}
+input[type="radio"]+span{
+  margin:0 20px 0 10px;
+}
+/* ------------------------------ */
+/*------ 購買情報のチェックボックス ------*/
+input[type="checkbox"]{
+  padding-left:25px;
+  vertical-align: middle;
+  position:relative;
+}
+input[type="checkbox"]::before,
+input[type="checkbox"]::after{
+  content:"";
+  display: block;
+  position: absolute;
+}
+input[type="checkbox"]::before{
+  background-color: #fff;
+  border-radius: 0%;
+  border:1px solid #d9d9d9;
+  width: 15px;
+  height: 15px;
+  top:50%;
+  left:0px;
+  transform:translateY(-50%);
+}
+input[type="checkbox"]::after{
+  border-right:3px solid #0140bf;
+  border-bottom:3px solid #0140bf;
+  margin-top: -11px;
+  width: 6px;
+  height: 13px;
+  top:50%;
+  left:6px;
+  transform:rotate(45deg);
+  opacity: 0;
+}
+input[type="checkbox"]:checked::after{
+  opacity: 1;
+}
+/* ------------------------------ */
+/*------ アカウント作成ボタン ------*/
+.btn{
+  width:100%;
+  padding:10px;
+  background: #0170bf;
+  color:#ffffff;
+  border:1px solid #d9d9d9;
+  border-radius: 3px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn:active{
+  color:#0170bf;
+  border:1px solid #d9d9d9;
+  background: #ffffff;
+  transition: .4s;
+}
