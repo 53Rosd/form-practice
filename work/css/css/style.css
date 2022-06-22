@@ -146,7 +146,7 @@ input[type="radio"]:checked::after{
   opacity: 1;
 }
 input[type="radio"]+label{
-  margin:0 20px 0 10px;
+  margin-right:20px;
 }
 /* ------------------------------ */
 /*------ 購買情報のチェックボックス ------*/
